@@ -1,3 +1,5 @@
+# Updated
+This is my beginning attempt at a basic to-do app. This currently has a login/logout capabilities.  Need to work on the sign-up portion a little more.
 # Todo List
 
 In this challenge we're going to create a basic CRUD app with just a single record type so that you can focus on practicing the basic actions for CRUD.
