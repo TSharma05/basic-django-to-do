@@ -1,0 +1,19 @@
+{% extends "items/base.html" %}
+
+{% block title %}Current Tasks{% endblock %} 
+
+{% block content %} 
+    {% if user.is_authenticated %} 
+        Hi {{ user.username }}!
+        <h1>All Current Tasks</h1>
+        {% for task in tasks %} 
+        <a href="{% url 'items:task_view' task.id %}"><h2>{{ task.title }}</h2></a>
+        {% endfor %} 
+        <p><a href="{% url 'logout' %}">Logout</a></p><br>
+        <a href="{% url 'items:index' %}">Return to Homepage</a>
+    {% else %} 
+        <p>You are not logged in</p>
+        <a href="{% url 'login' %}">Login</a>
+    {% endif %}
+    
+{% endblock %} 

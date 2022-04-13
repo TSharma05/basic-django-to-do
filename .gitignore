@@ -2,3 +2,7 @@ venv/
 .vscode/
 __pycache__/
 *.py[cod]
+
+__init__.py
+
+0001.initial.py
